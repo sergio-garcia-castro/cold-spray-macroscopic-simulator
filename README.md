@@ -28,6 +28,7 @@ Then, navigate to the project folder:
 ```bash
 cd cold-spray-modeling
 ```
+### Step 2: Install the project's virtual environment
 Use the cold_spray.yaml file provided in the repository to recreate the project's virtual environment. This file contains all the required dependencies for running the project.
 
 Create and activate the environment using the following commands:
