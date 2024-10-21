@@ -1,4 +1,4 @@
-# Cold Spray Macroscopic simulator
+# Cold Spray Macroscopic Simulator
 
 ## Description
 This project is designed to 3D model the Cold Spray process. The method used for this was through mesh modifcation, where we use the mathematical model of Cold Spray to adequately modify the points of the mesh.
@@ -113,5 +113,5 @@ The PyTorch3d library does not provide a visualiton module for the meshes, we re
 >>> pl.add_axes(interactive=True)
 >>> pl.show()
 ```
-<img src="examples/tanh.png" width="600">
+<img src="examples/mesh_simulation_figure.png" width="600">
 
