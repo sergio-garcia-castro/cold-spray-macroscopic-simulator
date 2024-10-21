@@ -1,14 +1,13 @@
 # Cold Spray Macroscopic Simulator
 
 ## Description
-This project is designed to 3D model the Cold Spray process. The method used for this was through mesh modifcation, where we use the mathematical model of Cold Spray to adequately modify the points of the mesh.
-In the repository it is included the main code, several examples, and `.obj` files that are loaded and used as meshes in both the examples and the main code. 
+This project is designed to 3D model the Cold Spray process using mesh modification techniques. The mathematical model of Cold Spray is implemented to accurately modify the vertices of the mesh, simulating the deposition process. The repository includes the main code, several examples, and `.obj` files that serve as meshes in both the examples and the main application.
 
 Key features:
-- Mesh handling from `.obj` files
-- Implementation of the mathematical model of the Cold Spray process.
-- Optimization during the simulation of the mesh modification.
-- Export final meshes.
+- Mesh handling: Importing and manage 3D meshes from `.obj` files
+- Mathematical Model Implementation: Incorporates the Cold Spray process model to modify mesh points effectively.
+- Simulation Optimization: Optimizes the mesh modification during the simulation.
+- Final Mesh Export: Allows exporting of the modified meshes for further use or analysis.
 
 ## Prerequisites
 Before getting started, ensure you have the following software installed:
