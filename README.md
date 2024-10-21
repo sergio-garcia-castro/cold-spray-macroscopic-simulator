@@ -1,13 +1,14 @@
-# My Python Project
+# Cold Spray Macroscopic simulator
 
 ## Description
-This project is designed to 3D model the Cold Spray process. It includes the main code, several example scripts, and `.obj` files that are loaded and used as meshes in both the examples and the main code. 
+This project is designed to 3D model the Cold Spray process. The method used for this was through mesh modifcation, where we use the mathematical model of Cold Spray to adequately modify the points of the mesh.
+In the repository it is included the main code, several examples, and `.obj` files that are loaded and used as meshes in both the examples and the main code. 
 
 Key features:
 - Mesh handling from `.obj` files
 - Implementation of the mathematical model of the Cold Spray process.
 - Optimization during the simulation of the mesh modification.
-- Export final
+- Export final meshes.
 
 ## Prerequisites
 Before getting started, ensure you have the following software installed:
@@ -38,6 +39,12 @@ conda activate ColdSpray
 This will install all the necessary packages.
 
 ## Usage
-The file `main.py` contains a first demonstration on the simulation and optimization of the Cold Spray simulation. In this we will
+The code was developed in Python using the following main libraries:
+\begin{itemize}
+    \item \textbf{PyTorch}: for tensor computation of mathematical operations and optimization.
+    \item \textbf{PyTorch3D}: for manipulating and modifying 3D meshes from simulations.
+    \item \textbf{Pyvista}: for 3D visualization of meshes.
+\end{itemize}
 
-
+The file `cold_spray.py` contains all the classes and methods used for the simulation. The details and explanation can be found in the documentation inside the file. 
+The file `main.py` contains a first demonstration on the simulation and optimization of the Cold Spray simulation. This file loads some of the meshes found in the meshes folder and permors and optimization process in order
