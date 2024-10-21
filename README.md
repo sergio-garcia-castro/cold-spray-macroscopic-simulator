@@ -33,7 +33,7 @@ Use the cold_spray.yml file provided in the repository to recreate the project's
 
 Create and activate the environment using the following commands:
 ```bash
-conda env create -f cold_spray.yml
+conda env create -f cold_spray.yaml
 conda activate ColdSpray
 ```
 This will install all the necessary packages.
