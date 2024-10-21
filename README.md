@@ -40,8 +40,8 @@ This will install all the necessary packages.
 
 ## Usage
 The code was developed in Python using the following main libraries:
-* PyTorch: for tensor computation of mathematical operations and optimization.
-* PyTorch3D: for manipulating and modifying 3D meshes from simulations.
+* [PyTorch](https://pytorch.org): for tensor computation of mathematical operations and optimization.
+* [PyTorch3D](https://pytorch3d.org): for manipulating and modifying 3D meshes from simulations.
 
 The file `cold_spray.py` is divided into four parts, each corresponding to a different Python class. Below, we describe the main features of each class:
 
@@ -90,16 +90,17 @@ The file `main.py` contains a first demonstration of the simulation and optimiza
    $\displaystyle n_t = \Big\lfloor \frac{t_f}{dt} \Big\rfloor + 1$ of time steps. 
    At each time step m, we update the position of the nozzle using
 
-    $N_m = (s_{N}\sin(\theta_{N_m}),\, -\frac{R}{2} + u_N \cdot m \cdot dt,\, s_{N}\cos(\theta_{N_m}))$,
+    $N_m = (s_{N}\sin(\theta_{N_m}), -\frac{R}{2} + u_N \cdot m \cdot dt, s_{N}\cos(\theta_{N_m}))$,
    as well as the corresponding normal. 
    We then apply the ray tracing algorithm to identify valid faces and vertices for the deposition generation. 
    The valid points are then modified according to model's equations, finally the mesh is updated.
 
 3. We repeat the process for each time step and for the number of passes.
 
+Check out the [examples](examples/) for more applications of the simulator.
 
 ## Recommended modules
-The PyTorch3d library does not provide a visualiton module for the meshes, we recommend using the [PyVista](https://docs.pyvista.org) library for visualitation processes. The following code shows how to do this.
+The PyTorch3D library does not provide a visualiton module for the meshes, we recommend using the [PyVista](https://docs.pyvista.org) library for visualitation processes. The following code shows how to do this.
 
 ```python
 >>> import pyvista as pv
