@@ -78,6 +78,7 @@ the nozzle with the z-axis of the reference frame.
 
     where $p \in\mathbb{R}^m$ represents the optimization parameters, and where the distance used is the chamfer distance provided by the PyTorch3d library. The optimization method used is gradient descent, with the Adam optimizer provided by PyTorch. Adjust the learning rate $lr$ according to the optimization parameters and the needs of the simulation.
 
+You can find more deatiled information about the methods used in each class in the `cold_spray.py` file.
 
 The file `main.py` contains a first demonstration of the simulation and optimization of the Cold Spray simulation. In this file we perform the following simulation : 
 
