@@ -29,14 +29,14 @@ Then, navigate to the project folder:
 ```bash
 cd cold-spray-modeling
 ```
-Use the cold_spray.yml file provided in the repository to recreate the project's virtual environment. This file contains all the required dependencies for running the project.
+Use the cold_spray.yaml file provided in the repository to recreate the project's virtual environment. This file contains all the required dependencies for running the project.
 
 Create and activate the environment using the following commands:
 ```bash
 conda env create -f cold_spray.yaml
 conda activate ColdSpray
 ```
-This will install all the necessary packages.
+This will install all the necessary packages. Once you have done this, you are ready to use the simulator.
 
 ## Usage
 The code was developed in Python using the following main libraries:
