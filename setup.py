@@ -9,6 +9,7 @@ setup(
     long_description=open('README.md').read(),  # You can create a README.md file for long description
     long_description_content_type='text/markdown',
     url='https://github.com/sergio-garcia-castro/cold-spray-macroscopic-simulator/',  # Replace with your project URL
+    packages=['Cold_Spray'],
     install_requires=["matplotlib", "pytorch==1.13.0", "pytorch3d=0.7.5"],  # Specify the dependencies
     python_requires='==3.9.19',  # Specify the required Python version
 )
