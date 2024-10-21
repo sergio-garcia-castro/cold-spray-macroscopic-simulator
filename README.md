@@ -1,12 +1,13 @@
 # My Python Project
 
 ## Description
-This project is designed to [brief explanation of what your project does]. It includes the main code, several example scripts, and `.obj` files that are utilized in both the examples and the main code. The project is structured to demonstrate [specific purpose or functionality].
+This project is designed to 3D model the Cold Spray process. It includes the main code, several example scripts, and `.obj` files that are loaded and used as meshes in both the examples and the main code. 
 
 Key features:
-- Feature 1
-- Feature 2
-- Feature 3
+- Mesh handling from `.obj` files
+- Implementation of the mathematical model of the Cold Spray process.
+- Optimization during the simulation of the mesh modification.
+- Export final
 
 ## Prerequisites
 Before getting started, ensure you have the following software installed:
@@ -14,23 +15,29 @@ Before getting started, ensure you have the following software installed:
 2. **Git**: To clone the repository, install Git from [here](https://git-scm.com/).
 
 ## Installation
+Due to limitations of one of the packages used, PyTorch3d, this project can only be installed on a Linux environment.
 
 ### Step 1: Clone the Repository
 
 First, clone the project repository from GitHub using the following command in your terminal:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/sergio-garcia-castro/cold-spray-modeling.git
 ```
 Then, navigate to the project folder:
 ```bash
-cd your-repo-name
+cd cold-spray-modeling
 ```
-Use the environment.yml file provided in the repository to recreate the project's virtual environment. This file contains all the required dependencies for running the project.
+Use the cold_spray.yml file provided in the repository to recreate the project's virtual environment. This file contains all the required dependencies for running the project.
 
 Create and activate the environment using the following commands:
 ```bash
-conda env create -f environment.yml
-conda activate my_project_env
+conda env create -f cold_spray.yml
+conda activate ColdSpray
 ```
-This will install all the necessary packages and dependencies listed in the environment.yml file.
+This will install all the necessary packages.
+
+## Usage
+The file `main.py` contains a first demonstration on the simulation and optimization of the Cold Spray simulation. In this we will
+
+
