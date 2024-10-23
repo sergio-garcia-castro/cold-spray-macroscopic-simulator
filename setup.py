@@ -2,7 +2,7 @@ from setuptools import setup
 
 # Setup configuration
 setup(
-    name='ColdSprayTest',
+    name='Cold_Spray',
     version='0.1.0',
     author='Sergio Garcia',
     author_email='sergio.garcia_castro@etu.minesparis.psl.eu',
