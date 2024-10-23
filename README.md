@@ -10,16 +10,14 @@ Key features:
 - Final Mesh Export: Allows exporting of the modified meshes for further use or analysis.
 
 ## Prerequisites
-Before getting started, ensure you have the following software installed:
-1. **Anaconda** or **Miniconda**: You can download and install it from [Anaconda](https://www.anaconda.com/products/individual) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
-2. **Git**: To clone the repository, install Git from [here](https://git-scm.com/).
+Before getting started, ensure you have the following software installed Git in order to clone the repository, install Git from [here](https://git-scm.com/).
 
 ## Installation
 Due to limitations of one of the packages used, PyTorch3d, this project can only be installed on a Linux environment.
 
 ### Step 1: Clone the Repository
 
-First, clone the project repository from GitHub using the following command in your terminal:
+First, create a directory (we will call it *cold-spray-modeling*) to store de project and clone the project repository from GitHub in it using the following command in your terminal:
 
 ```bash
 git clone https://github.com/sergio-garcia-castro/cold-spray-modeling.git
@@ -28,9 +26,24 @@ Then, navigate to the project folder:
 ```bash
 cd cold-spray-modeling
 ```
-### Step 2: Install the project's virtual environment
-Use the cold_spray.yaml file provided in the repository to recreate the project's virtual environment. This file contains all the required dependencies for running the project.
+### Step 2: Create the project's virtual environment and install the package
+Create a virtual environment *venv* inside the directory and activate it. With pip: 
+```bash
+python3.9.19 -m venv  venv
+source myenv/bin/activate
 
+```
+with Conda: 
+```bash 
+conda create -n venv python==3.9.19
+conda activate venv
+```
+and activate it.
+
+Then, in the cloned repository, install the package with 
+```bash 
+pip install -e .
+```
 Create and activate the environment using the following commands:
 ```bash
 conda env create -f cold_spray.yaml
@@ -38,6 +51,15 @@ conda activate ColdSpray
 ```
 This will install all the necessary packages. Once you have done this, you are ready to use the simulator.
 
+### Step 3: Install PyTorch3d
+Install the PyTorch3d library using the following command in pip:
+```bash
+pip install "git+https://github.com/facebookresearch/pytorch3d.git"
+```
+or with Conda
+```bash
+conda install pytorch3d -c pytorch3d
+```
 ## Usage
 The code was developed in Python using the following main libraries:
 * [PyTorch](https://pytorch.org): for tensor computation of mathematical operations and optimization.
