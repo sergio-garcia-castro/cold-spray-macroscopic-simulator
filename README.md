@@ -13,53 +13,49 @@ Key features:
 Before getting started, ensure you have the following software installed Git in order to clone the repository, install Git from [here](https://git-scm.com/).
 
 ## Installation
-Due to limitations of one of the packages used, PyTorch3d, this project can only be installed on a Linux environment.
+Due to limitations of one of the dependencies, PyTorch3D, this project can only be installed on a Linux environment.
 
 ### Step 1: Clone the Repository
 
-First, create a directory (we will call it *cold-spray-modeling*) to store de project and clone the project repository from GitHub in it using the following command in your terminal:
+Create a directory (we will call it *cold-spray-modeling*) to store the project and clone the repository from GitHub into it by running the following commands in your terminal:
 
 ```bash
+mkdir cold-spray-modeling
+cd cold-spray-modeling
 git clone https://github.com/sergio-garcia-castro/cold-spray-modeling.git
 ```
-Then, navigate to the project folder:
+Navigate to the project folder:
 ```bash
 cd cold-spray-modeling
 ```
 ### Step 2: Create the project's virtual environment and install the package
-Create a virtual environment *venv* inside the directory and activate it. With pip: 
+Using **venv** Create a virtual environment (called *venv*) inside the project directory and activate it: 
 ```bash
-python3.9.19 -m venv  venv
-source myenv/bin/activate
-
+python3.9 -m venv venv
+source venv/bin/activate
 ```
-with Conda: 
+Alternatively, you can use Conda to create and activate a Conda environment:
+
 ```bash 
-conda create -n venv python==3.9.19
+conda create -n venv python=3.9
 conda activate venv
 ```
-and activate it.
-
-Then, in the cloned repository, install the package with 
+Install the project's dependencies using the following commands:
 ```bash 
 pip install -e .
 ```
-Create and activate the environment using the following commands:
-```bash
-conda env create -f cold_spray.yaml
-conda activate ColdSpray
-```
-This will install all the necessary packages. Once you have done this, you are ready to use the simulator.
-
 ### Step 3: Install PyTorch3d
-Install the PyTorch3d library using the following command in pip:
+Since PyTorch3D is a special dependency, you need to install it separately. You can do this in one of two ways.
+Using **pip** : 
 ```bash
 pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 ```
-or with Conda
+Using Conda
 ```bash
 conda install pytorch3d -c pytorch3d
 ```
+Once all dependencies and PyTorch3D are installed, your environment is set up and you're ready to use the simulator.
+
 ## Usage
 The code was developed in Python using the following main libraries:
 * [PyTorch](https://pytorch.org): for tensor computation of mathematical operations and optimization.
