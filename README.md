@@ -29,7 +29,7 @@ Navigate to the project folder:
 cd cold-spray-modeling
 ```
 ### Step 2: Create the project's virtual environment and install the package
-Using **venv** Create a virtual environment (called *venv*) inside the project directory and activate it: 
+Using `venv` Create a virtual environment (called *venv*) inside the project directory and activate it: 
 ```bash
 python3.9 -m venv venv
 source venv/bin/activate
@@ -46,7 +46,7 @@ pip install -e .
 ```
 ### Step 3: Install PyTorch3d
 Since PyTorch3D is a special dependency, you need to install it separately. You can do this in one of two ways.
-Using **pip** : 
+Using `pip` : 
 ```bash
 pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 ```
