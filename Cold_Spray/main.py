@@ -121,5 +121,5 @@ for _ in range(n_iter):
     optimization.optimizer.step()
 
 # Export the final modified mesh to an .obj file.
-# final_mesh_path = f'meshes/Final_mesh_{int(n_p/2)}_passes_{angles_indices[i]}_degrees.obj'
-# mesh_modification.export_obj(final_mesh_path)
+final_mesh_path = f'meshes/Final_mesh_{n_p}_passes_{angles_indices[i]}_degrees.obj'
+mesh_modification.export_obj(final_mesh_path)
