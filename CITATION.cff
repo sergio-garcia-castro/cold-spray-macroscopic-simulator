@@ -5,7 +5,5 @@ authors:
     given-names: Sergio
 title: "Cold Spray Macroscopic Simulator"
 version: 1.0.0
-identifiers:
-  - type: http
-    value: https://github.com/sergio-garcia-castro/cold-spray-macroscopic-simulator.git
+url: https://github.com/sergio-garcia-castro/cold-spray-macroscopic-simulator.git
 date-released: 2024-09-15
