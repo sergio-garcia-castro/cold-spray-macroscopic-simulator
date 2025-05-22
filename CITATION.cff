@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Garcia Castro
+    given-names: Sergio
+title: "Cold Spray Macroscopic Simulator"
+version: 1.0.0
+identifiers:
+  - type: http
+    value: https://github.com/sergio-garcia-castro/cold-spray-macroscopic-simulator.git
+date-released: 2024-09-15
